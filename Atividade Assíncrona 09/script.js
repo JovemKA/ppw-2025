@@ -39,7 +39,31 @@ function ehPrimo(n, divisor = 2) {
 
 }
 
-// Teste ehPrimo
-console.log(ehPrimo(7)); // true
-console.log(ehPrimo(10)); // false
-console.log(ehPrimo(13)); // true
+// Soma de Elementos de um Array:
+// Escreva uma função recursiva que receba um array de números inteiros e retorne a soma de todos os seus elementos. Por exemplo, dada a entrada [1, 2, 3, 4], o retorno deverá ser 10.
+
+function somaArray(arr, index = 0) {
+
+    if (index >= arr.length) {
+        return 0;
+    } 
+    
+    return arr[index] + somaArray(arr, index + 1);
+}
+
+// Inversão de uma String:
+// Crie uma função recursiva que receba uma string e retorne a mesma string invertida. Por exemplo, a entrada "javascript" deverá resultar em "tpircsavaj".
+
+function inverterString(str) {
+     
+    if (str === "") {
+        return "";
+    }
+    
+    return str.split("").reverse().join("");
+}
+
+// Sequência de Fibonacci:
+// Faça uma função recursiva que, dado um número inteiro n, retorne o n-ésimo termo da sequência de Fibonacci. Considere que os dois primeiros termos da sequência são 0 e 1.
+
+
